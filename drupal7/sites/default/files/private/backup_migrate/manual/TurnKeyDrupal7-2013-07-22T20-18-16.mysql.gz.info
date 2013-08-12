@@ -1,0 +1,8 @@
+filename = "TurnKeyDrupal7-2013-07-22T20-18-16"
+description = ""
+datestamp = "1374524296"
+generator = "Backup and Migrate (http://drupal.org/project/backup_migrate)"
+generatorversion = "7.x-2.x"
+sites[0][version] = "7.14"
+sites[0][name] = "TurnKey Drupal7"
+sites[0][url] = "http://ec2-54-235-5-34.compute-1.amazonaws.com/"
