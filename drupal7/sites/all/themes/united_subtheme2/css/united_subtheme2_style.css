@@ -1208,6 +1208,9 @@ td.views-field-field-beverage-menus ul{
 	border: none;
 	outline: none;
 }
+.page-features-overview-77y #features_menu, .page-features-seats-77y #features_menu{
+	display: none;
+}
 #features table p{
 	color:#002244;
 	font-family: 'Conv_ClanOT-News';
