@@ -340,7 +340,8 @@
 	
 	// Get Page URL and set active links
 	
-	$(function(){	
+     
+   	$(function(){	
 	
 url = $.url(window.location.pathname);
       
@@ -348,33 +349,56 @@ url = $.url(window.location.pathname);
 	
    // get current url dir 
      	urlRegExp = url.attr('directory');
+     	    }); 
         // create regexp to match current url pathname and remove trailing slash if present as it could collide with the link in navigation in case trailing slash wasn't present there
         
-        // now grab every link from the navigation
-        
-        // Cabin Class/Section Nav active
+       
+         // Cabin Class/Section Nav active          
+            var cabinClass =  url.segment(5);
+            
+      	//console.log( "cabin class or section class =" + cabinClass );
+ 	
+ 	        // now grab every link from the navigation
         $('.view-features-menus2-cabin-class-menu ul li div div a').each(function(){
         
-    	urlRegExp = url.attr('directory');
-            var getElementUrl = $(this).attr('href');
-            
-            console.log( "the cabin sections are =" + getElementUrl );
-            
-              console.log( "the url section is =" + urlRegExp );
-            
-           // Put the active class on the top Seating, Galley, Toilet section Nav 
-            if(urlRegExp === getElementUrl ) {
+
+           var getElementUrl = $(this).attr('href').split('/')[5];
+                   
+                  //console.log( "these links section =" + getElementUrl );
+                    
+                 if(cabinClass == getElementUrl ) {
                 $(this).parent().parent().parent().addClass('active');
             }
-		  });
-       });  
+
+});
+
+
+ // Cabin Class/Section Menu Region active Food & Bev Specific!!!
+         
+            var foodBevMenuRoute =  url.segment(6);
+        	//console.log( "aircraft URL" + aircraftType );
+ 	
+ 	        // now grab every link from the navigation
+        $('#features div.route-nav ul li div div a').each(function(){
+        
+
+           var getElementUrl = $(this).attr('href').split('/')[6];
+                   
+                  // console.log( "the type links = " + getElementUrl ).each();
+                    
+                 if(foodBevMenuRoute == getElementUrl ) {
+                $(this).parent().parent().parent().addClass('activeRoute');
+            }
+
+});
+
         
   
      /// Right menu active link          
  
  var linkLevel =  url.segment(2);
  
- 		//console.log( "url section is " + linkLevel )
+ 		console.log( "url section is " + linkLevel )
  
  	         $('#features_menu a').each(function () {
                  
@@ -384,37 +408,48 @@ url = $.url(window.location.pathname);
                     
                  if(linkLevel == getElementUrl ) {
                      $(this).children().addClass('active');
-                 }
+                     }  
+                 
+                  if(linkLevel === "amenity-kits" ) {
+                     $(".view-features-menus2-cabin-class-menu li").remove(".views-row-3");
+                     $(".view-features-menus2-cabin-class-menu li").remove(".views-row-4");
+                     }
+              
              });
       
+             
 
   var aircraftType =  url.segment(4);
  
- 	//console.log( "aircraft URL" + aircraftType );
+ 	//console.log( "aircraft congfig URL is " + aircraftType );
  	
  	        // now grab every link from the navigation
-        $('#features div.view-display-id-block_2 ul li div div a').each(function(){
+        $('#features div.config-menu ul li div div a').each(function(){
         
 
            var getElementUrl = $(this).attr('href').split('/')[4];
                    
-                  // console.log( "the type links = " + getElementUrl ).each();
+                 // console.log( "the config-type links = " + getElementUrl );
                     
                  if(aircraftType == getElementUrl ) {
                 $(this).parent().parent().parent().addClass('activeConfig');
             }
 
 });
+        
+ 
+ 
 
-// slideshow fixins
-//$('.slideshow').parent().addClass('slider-container');
-
-//$('.views-field-field-tabletop p').after("<div class='clear-float'></div>")
-
-//$('.thumbs').prependTo('.thumb-wrap');
-
-
-
+/* Gallerias slideshow fixins
+	Galleria.run('#galleria-1', {
+    dataConfig: function('.galleria-info') {
+        return {
+            title: $('.galleria-info-title').html(), // tell Galleria to use the h2 as title
+            description: $('.galleria-info-description').html() // tell Galleria to grab the content from the .desc div as caption
+        };
+    }
+});
+*/
 
 /// aircraft type/configuration dropdown
 
@@ -429,7 +464,7 @@ url = $.url(window.location.pathname);
 
 	$("#header p").remove();
 	
-	$("#home-wrap #first-time").remove();
+	//$("#home-wrap #first-time").remove();
 	
 	$("#features tr").removeClass('odd even');
 	
@@ -437,12 +472,31 @@ url = $.url(window.location.pathname);
   window.location = 'http://54.227.239.49/';
 });
 
+	$('.activeConfig').prependTo('.config-menu ul');
+	
+	$(".views-row-first td:first-child").addClass("first-cell");
+	
+	
+// Tabletop table fix
+//( $("ul li:nth-last-of-type(2)")
+	$(".views-field-field-tabletop table.four-col tr:nth-last-child(1) td:nth-last-child(2)").addClass("full-width");
+	$(".views-field-field-tabletop table.four-col tr:gt(3)").addClass("half-width");
+
 ///  slide show config
 
+
+	$(".galleria-info-text").css("display","block");
 
 // Food and Bev class addition	
 	$(".view-food-bev-blocks").first().addClass("food-bev-overview");
 	$(".view-food-bev-blocks:nth-child(2)").addClass("beverages-list");
+	
+	$(".route-nav").parent().parent().addClass("route-nav-wrapper");
+
+	$(".page-features-food-beverage-.view-display-id-block_2 table tr td:first-of-type").addClass("route-name");
+
+	
+	
 
 	
 // end of $ wrapper 
