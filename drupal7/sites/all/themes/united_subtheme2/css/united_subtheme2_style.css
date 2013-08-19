@@ -1986,7 +1986,7 @@ height: 305px !important;
 }
 
 #caption-test .galleria-info-link, #caption-test .galleria-info-close, #caption-test .galleria-counter {
-	display: block !important;
+	
 }
 
 .galleria-container {
@@ -2176,4 +2176,7 @@ font-family: 'Conv_ClanOT-News';
 font-size: 11px;
 line-height: 1.5em;
 }
-
+#galleria-1{
+	height:350px;
+	width:600px;
+}

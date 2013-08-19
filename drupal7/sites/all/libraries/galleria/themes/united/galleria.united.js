@@ -17,7 +17,7 @@ Galleria.addTheme({
         _my_color: '#eeeee',
 
         // set this to false if you want to show the caption all the time:
-        _toggleInfo: true
+        _toggleInfo: false
     },
            
     
@@ -96,15 +96,8 @@ Galleria.addTheme({
     
 });
 
-Galleria.run('.galleria-info-text', {
-    dataConfig: function(div) {
-        // img is now the image element
-        // the function should return an object with the new data
-        return {
-            title: $(".galleria-info-title").html(), // sets title to "John Doe"
-            description: $(div).next('.galleria-info-description').html() // sets description to "My picture"
-        };
-   }
-});
+
+
+
 
 }(jQuery));
