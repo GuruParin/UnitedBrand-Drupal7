@@ -1806,16 +1806,15 @@ dt{
 
 #breadcrumb{
 	margin: 0px auto;
-	width: 880px;
+width: 1080px;
 }
 .breadcrumb{ 	
-	position: absolute;
-	top: 102px;
-	margin: 0px auto;
-	z-index: 3;
-	color: #75b3e6;
-	font-size: 12px;
-	width: 900px;
+	margin: 0px 0px 0 100px;
+z-index: 3;
+color: #75b3e6;
+font-size: 12px;
+width: 1080px;
+position: absolute;
  
 }
 .breadcrumb a { 	
