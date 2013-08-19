@@ -18,6 +18,7 @@ Galleria.addTheme({
 
         // set this to false if you want to show the caption all the time:
         _toggleInfo: false
+       
     },
            
     

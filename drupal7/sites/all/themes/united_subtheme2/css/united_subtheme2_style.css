@@ -978,10 +978,9 @@ table.three-col td{
 	margin: 5px 26px;
 }
 table.two-col td{
-	vertical-align: top;
-	height: 10px;
-	background-color:#e8e8e8;
+	background-color: #e8e8e8;
 	border-bottom: solid 1px #fff;
+	padding: 6px 16px;
 
 }
 table.one-col td{
@@ -1143,7 +1142,8 @@ td.views-field-field-beverage-menus ul{
 	text-decoration: none;
 }
 .select-region{
-	color:#67aae1;
+	color:#62a9e3;
+	font-family: 'Conv_ClanOT-Medium';
 	float:left;
 }
 .route-nav{
@@ -2135,12 +2135,6 @@ font-family: 'Conv_ClanOT-Medium';
 font-size: 11px;
 }
 
-.Xgrayback table.two-col td {
-vertical-align: top;
-height: 10px;
-background-color: #E8E8E8;
-border-bottom: solid 1px white;
-}
 
 .grayback .first-col {
 	width: 127px;

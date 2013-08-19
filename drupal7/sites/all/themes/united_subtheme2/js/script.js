@@ -353,10 +353,10 @@ url = $.url(window.location.pathname);
         // create regexp to match current url pathname and remove trailing slash if present as it could collide with the link in navigation in case trailing slash wasn't present there
         
        
-         // Cabin Class/Section Nav active          
+     // Cabin Class/Section Nav active          
             var cabinClass =  url.segment(5);
             
-      	//console.log( "cabin class or section class =" + cabinClass );
+      	console.log( "URL cabin class =" + cabinClass );
  	
  	        // now grab every link from the navigation
         $('.view-features-menus2-cabin-class-menu ul li div div a').each(function(){
@@ -364,13 +364,26 @@ url = $.url(window.location.pathname);
 
            var getElementUrl = $(this).attr('href').split('/')[5];
                    
-                  //console.log( "these links section =" + getElementUrl );
+                  console.log( "these links Cabin Class section =" + getElementUrl );
                     
                  if(cabinClass == getElementUrl ) {
                 $(this).parent().parent().parent().addClass('active');
-            }
+				}
+            	 
+			});
 
-});
+    // Remove amenity kits from Economy - right menu
+        $('#features_menu a').each(function(){
+        
+         var getElementUrl = $(this).attr('href').split('/')[5];
+
+
+   if(cabinClass == "United Economy Plus" ) {
+                $("#features_menu a").remove(":contains('Amenity')");            }
+            
+            else if(cabinClass == "United Economy" ) {
+                $("#features_menu a").remove(":contains('Amenity')");            }
+        });    
 
 
  // Cabin Class/Section Menu Region active Food & Bev Specific!!!
@@ -398,7 +411,7 @@ url = $.url(window.location.pathname);
  
  var linkLevel =  url.segment(2);
  
- 		console.log( "url section is " + linkLevel )
+ 		//console.log( "url section is " + linkLevel )
  
  	         $('#features_menu a').each(function () {
                  
@@ -411,8 +424,8 @@ url = $.url(window.location.pathname);
                      }  
                  
                   if(linkLevel === "amenity-kits" ) {
-                     $(".view-features-menus2-cabin-class-menu li").remove(".views-row-3");
-                     $(".view-features-menus2-cabin-class-menu li").remove(".views-row-4");
+                     $(".view-features-menus2-cabin-class-menu li").remove(":contains('Economy')");
+                    
                      }
               
              });
