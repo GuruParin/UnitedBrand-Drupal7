@@ -2178,10 +2178,34 @@ line-height: 1.5em;
 
 .lt-ie9 #block-menu-menu-left-margin-menu ul.menu{
 	top:90px !important;
-	height:190%;
+	height:390%;
+}
+.lt-ie9 #block-menu-menu-left-margin-menu #planes ul.menu{
+	top:0px !important;
+	height:390%;
 }
 
 .lt-ie9 .config-menu{
 	position: absolute;
 	top:90px;
 }
+.lt-ie9 .view-id-features_food_bev_food.view-display-id-block_2 table{
+	margin:14px 0px;
+}
+.lt-ie9 .view-id-features_food_bev_food.view-display-id-block_2 table td{
+	padding:14px 0px 0px 20px;
+	vertical-align: top;
+}
+.lt-ie9 .item-list ul{
+	margin-top:0px;
+}
+.lt-ie9 .select-region{
+	margin-bottom: 10px;
+}
+.lt-ie9 #features table li a {
+	display:inline;
+}
+.lt-ie9 #features_menu{
+	top:230px;
+}
+
