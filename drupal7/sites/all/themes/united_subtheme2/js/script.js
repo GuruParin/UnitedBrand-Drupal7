@@ -508,7 +508,23 @@ url = $.url(window.location.pathname);
 
 	$(".page-features-food-beverage-.view-display-id-block_2 table tr td:first-of-type").addClass("route-name");
 
+// Email this Page
+
+        
+$( "#list-sharebutton" ).click(function() {
+emailCurrentPage();
+ 
+});
+
+  var emailSubject = html.match("<title>(.*?)</title>")[1];
+ 
+  function emailCurrentPage(emailSubject){
+	 
 	
+	  
+	  window.location.href = "mailto:?subject="+emailSubject+"&body=message%20goes%20here";
+            console.log( window.location.href );
+        };	
 	
 
 	

@@ -1636,7 +1636,7 @@ a{
 	width: 39px; 
 	background-repeat: no-repeat;	
 }
-#list-email{
+#list-sharebutton{
 	background-image:url("../images/email.gif");	
 	background-position:5px 18px; 
 	height: 60px;
@@ -1875,8 +1875,7 @@ span.field-label { /* The inline field label used by the Fences module */
 	left: 0;
 	position: absolute;
 	margin: 0px 0px;
-	width: 40px;
-	
+	width: 40px;	
 	height: 97%;
 	top: 1px;
 }
@@ -2172,4 +2171,17 @@ line-height: 1.5em;
 #galleria-1{
 	height:350px;
 	width:600px;
+}
+
+
+/* -- IE CSS--*/
+
+.lt-ie9 #block-menu-menu-left-margin-menu ul.menu{
+	top:90px !important;
+	height:190%;
+}
+
+.lt-ie9 .config-menu{
+	position: absolute;
+	top:90px;
 }
