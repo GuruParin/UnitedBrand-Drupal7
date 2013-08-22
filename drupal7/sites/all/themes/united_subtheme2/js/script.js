@@ -272,11 +272,12 @@
 
   jQuery(document).ready(function($) {
     // Code that uses jQuery's $ can follow here.
+    
  $(function() {
 	 $('.pane-panels-mini').hide();
 	 
 	 // changed to .live because Drupal 7 ships with JQuery 1.4
-	    $('.white-text').live('click', function() {	    
+	 var showOverlay =     function() {	    
 	    	
 	    		    	 $('.pane-panels-mini').hide(400);
 	        var sName = $(this).attr('id');
@@ -284,7 +285,11 @@
 	
 			 $('.'+sName+'-home-overlay').toggle(400);
 		
-	    });
+	    };
+	    
+	    $('.white-text').click(showOverlay);
+	    
+	
 	
 		$('.close').live('click', function() {
 	        //$(this).parent('div').toggle(400);
@@ -349,17 +354,26 @@ url = $.url(window.location.pathname);
 
 
 	
-// Email this Page      
-$( "#list-sharebutton" ).click(function(url) {
-//emailCurrentPage();
- 
+// Share/Email this Slider
+
+$( "<ul id='share-slider' class='menu'><li id='fb'>FB</li><li id='tweet'>Tweet</li><li id='email-this'>email</li></ul>" ).appendTo($("#list-sharebutton"));
+      
+
+
+/*
+*/
+
+function emailCurrentPage(url) {
+
  var currentURL = window.location.href;
   var title = "United Product Guide" 
   //document.title;
   
 	  window.location.href = "mailto:?subject="+title+"&body="+ currentURL;
          
-});
+};
+
+	$('#email-this').click(emailCurrentPage);
 
 	
    // get current url dir 
@@ -504,6 +518,9 @@ $( "#list-sharebutton" ).click(function(url) {
 	
 	$(".views-row-first td:first-child").addClass("first-cell");
 	
+	//$('a#print01').replaceWith('#block-printfriendly-printfriendly a');
+
+	
 	
 // Tabletop table fix
 //( $("ul li:nth-last-of-type(2)")
@@ -523,8 +540,10 @@ $( "#list-sharebutton" ).click(function(url) {
 
 	$(".page-features-food-beverage-.view-display-id-block_2 table tr td:first-of-type").addClass("route-name");
 
+// IE Background fix
 
-	
+	$('<div id="bg"><img src="../images/747 HI-res-NEW-Fleet-page-Silo_mg_with_bkg.jpg" alt=""></div>').prependTo('.lt-ie9 #home-wrap');
+
 // end of $ wrapper 
 });
 

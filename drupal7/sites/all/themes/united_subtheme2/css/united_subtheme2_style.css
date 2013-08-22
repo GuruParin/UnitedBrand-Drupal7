@@ -252,9 +252,9 @@ border: none;
 	height:800px;
 	top: 0px;
 	margin-top: 0px;
-}
+	}
 #landing-wrap{
-	background: url(../images/aircraft-landing.jpg) no-repeat left -155px;
+	background: url("../images/aircraft-landing.jpg") no-repeat left -155px;
 -webkit-background-size: cover;
 -moz-background-size: cover;
 -o-background-size: cover;
@@ -845,7 +845,7 @@ ul#aircraft-class-selection li, div.view-features-menus2-cabin-class-menu li{
 	max-width: 152px;
 	}
 div.view-features-menus2-cabin-class-menu li:hover{
-	background-color: #edb72b;
+xL	background-color: #edb72b;
 }
 ul#aircraft-class-selection li a, div.view-features-menus2-cabin-class-menu li a{
 	text-decoration: none;
@@ -1629,12 +1629,15 @@ a{
 	width: 39px;
 	background-repeat: no-repeat; 	
 }
-#list-print{
+#block-printfriendly-printfriendly{
 	background-image:url("../images/print.gif");
 		background-position:5px 18px;
 		height: 60px;
 	width: 39px; 
-	background-repeat: no-repeat;	
+	background-repeat: no-repeat;
+	position: absolute;	
+	top:22px;
+	left:44px;
 }
 #list-sharebutton{
 	background-image:url("../images/email.gif");	
@@ -1642,6 +1645,39 @@ a{
 	height: 60px;
 	width: 39px;
 	background-repeat: no-repeat;
+}
+#share-slider{
+	display:none;
+	background-color: #fff !important;
+	width: 39px;
+	top:111px !important;
+	left:40px !important;
+	}
+#share-slider li{
+	border-top:none;
+	padding: 0px;
+	}
+	
+#fb{
+	background-image:url('../images/fb.gif');
+		background-position:3px 1px;
+		height: 30px;
+	width: 39px;
+	background-repeat: no-repeat; 	
+}
+#email-this{
+	background-image:url('../images/email-this.gif');
+		background-position:3px 1px;
+		height: 30px;
+	width: 39px;
+	background-repeat: no-repeat; 	
+}
+#tweet{
+	background-image:url('../images/tweet.gif');
+		background-position:3px 1px;
+		height: 30px;
+	width: 39px;
+	background-repeat: no-repeat; 	
 }
 
 /* admin styles */
@@ -2180,7 +2216,7 @@ line-height: 1.5em;
 	top:90px !important;
 	height:390%;
 }
-.lt-ie9 #block-menu-menu-left-margin-menu #planes ul.menu{
+.lt-ie9 #block-menu-menu-left-margin-menu ul.menu #planes ul.menu{
 	top:0px !important;
 	height:390%;
 }
@@ -2208,4 +2244,30 @@ line-height: 1.5em;
 .lt-ie9 #features_menu{
 	top:230px;
 }
+.lt-ie9 #fleet_total_top{
+	top:180px;
+}
 
+.lt-ie9 #main{
+
+}
+.lt-ie9 #home-wrap{
+  background: none !important;
+}
+.lt-ie9 #bg {
+  position: fixed; 
+  top: -50%; 
+  left: -50%; 
+  width: 200%; 
+  height: 200%;
+}
+.lt-ie9 #bg img {
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  right: 0; 
+  bottom: 0; 
+  margin: auto; 
+  min-width: 50%;
+  min-height: 50%;
+}
