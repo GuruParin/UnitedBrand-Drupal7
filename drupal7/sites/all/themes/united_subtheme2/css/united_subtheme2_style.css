@@ -252,16 +252,28 @@ border: none;
 	height:800px;
 	top: 0px;
 	margin-top: 0px;
+	position: relative;
+	z-index: 1;
+	width:100%;
+    /* The url is relative to the document, not to the css file! */
+    /* Prefer absolute urls to avoid confusion. */
+   
+    -ms-behavior: url('http://54.227.239.49/sites/all/themes/united_subtheme2/css/backgroundsize.min.htc');
+
 	}
 #landing-wrap{
-	background: url("../images/aircraft-landing.jpg") no-repeat left -155px;
--webkit-background-size: cover;
--moz-background-size: cover;
--o-background-size: cover;
-background-size: cover;
-height: 800px;
-top: 0px;
-margin-top: 0px;
+	background: url("../images/aircraft-landing.jpg") no-repeat left -225px;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	height: 800px;
+	top: 0px;
+	margin-top: 0px;
+	position: relative;
+	z-index: 1;
+	width:100%;
+	-ms-behavior: url('http://54.227.239.49/sites/all/themes/united_subtheme2/css/backgroundsize.min.htc');
 }
 .rapper{	
 	width: 100%;
@@ -754,6 +766,8 @@ margin: 0px 0 0;
 	 display:block;
 	position: absolute;
 	z-index: 9;
+	-ms-behavior: url('http://54.227.239.49/sites/all/themes/united_subtheme2/css/backgroundsize.min.htc');
+	background-size: 255px 222px;
 	
 }
 .view-id-home_overlay ul{
@@ -1250,11 +1264,11 @@ td.views-field-field-beverage-menus ul{
 	background-image:url(../images/AIRCRAFT/787.png);
 	background-position:172px 15px; 
 	background-repeat:no-repeat;
-	background-size: 220px;
+	background-size: 220px 160px;
 	margin-top: 207px;
-	margin-left: 140px;
-	}
+	margin-left: 140px;	
 
+	}
 	
 #mini-panel-777_home_overlay{
 	background-image: url(../images/AIRCRAFT/777.png);
@@ -1678,6 +1692,10 @@ a{
 		height: 30px;
 	width: 39px;
 	background-repeat: no-repeat; 	
+}
+/* Search CSS */
+.page-search #content{
+	margin:88px 0 92px 178px;	
 }
 
 /* admin styles */
@@ -2127,7 +2145,6 @@ background-color:none !important;
 	top: 0px;
 }
 
-
 #logo {
 	margin: 30px 0px 0;
 	padding: 0;
@@ -2135,9 +2152,7 @@ background-color:none !important;
 	width: 321px;
 }
 
-
 .clear { clear: both; }
-
 
 .grayback .pane-content {
 	background: none;
@@ -2145,14 +2160,11 @@ background-color:none !important;
 .grayback ul {
 	background: none;
 	padding: 0;
-
 }
-
 #features .two-col tr {
 border-bottom: solid 1px white;
 height: 15px;
 }
-
 .grayback table {
 	border-spacing: 0px;
 	width: 745px;
@@ -2213,17 +2225,17 @@ line-height: 1.5em;
 /* -- IE CSS--*/
 
 .lt-ie9 #block-menu-menu-left-margin-menu ul.menu{
-	top:90px !important;
-	height:390%;
+	top:0px !important;
+	height:100%;
 }
 .lt-ie9 #block-menu-menu-left-margin-menu ul.menu #planes ul.menu{
 	top:0px !important;
-	height:390%;
+	height:100%;
 }
 
 .lt-ie9 .config-menu{
 	position: absolute;
-	top:90px;
+	top:0px;
 }
 .lt-ie9 .view-id-features_food_bev_food.view-display-id-block_2 table{
 	margin:14px 0px;
@@ -2248,26 +2260,9 @@ line-height: 1.5em;
 	top:180px;
 }
 
-.lt-ie9 #main{
-
+.lt-ie9 #mini-panel-home_overlays_assembled .panel-display img{
+	margin:0 0 0 185px;
 }
-.lt-ie9 #home-wrap{
-  background: none !important;
-}
-.lt-ie9 #bg {
-  position: fixed; 
-  top: -50%; 
-  left: -50%; 
-  width: 200%; 
-  height: 200%;
-}
-.lt-ie9 #bg img {
-  position: absolute; 
-  top: 0; 
-  left: 0; 
-  right: 0; 
-  bottom: 0; 
-  margin: auto; 
-  min-width: 50%;
-  min-height: 50%;
+.lt-ie9 #landing-wrap img{
+	top:-255px !important;
 }

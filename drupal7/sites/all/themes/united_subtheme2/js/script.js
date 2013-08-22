@@ -360,13 +360,12 @@ $( "<ul id='share-slider' class='menu'><li id='fb'>FB</li><li id='tweet'>Tweet</
       
 
 
-/*
-*/
+/**/
 
 function emailCurrentPage(url) {
 
  var currentURL = window.location.href;
-  var title = "United Product Guide" 
+ var title = "United Product Guide" 
   //document.title;
   
 	  window.location.href = "mailto:?subject="+title+"&body="+ currentURL;
@@ -375,7 +374,6 @@ function emailCurrentPage(url) {
 
 	$('#email-this').click(emailCurrentPage);
 
-	
    // get current url dir 
      	urlRegExp = url.attr('directory');
      	    }); 
@@ -506,8 +504,6 @@ function emailCurrentPage(url) {
 
 	$("#header p").remove();
 	
-	//$("#home-wrap #first-time").remove();
-	
 	$("#features tr").removeClass('odd even');
 	
 	$('#list-planes').click(function(){
@@ -540,9 +536,11 @@ function emailCurrentPage(url) {
 
 	$(".page-features-food-beverage-.view-display-id-block_2 table tr td:first-of-type").addClass("route-name");
 
-// IE Background fix
+/* IE Background fix
 
 	$('<div id="bg"><img src="../images/747 HI-res-NEW-Fleet-page-Silo_mg_with_bkg.jpg" alt=""></div>').prependTo('.lt-ie9 #home-wrap');
+
+*/
 
 // end of $ wrapper 
 });
