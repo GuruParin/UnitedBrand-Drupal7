@@ -519,7 +519,7 @@ function emailCurrentPage(url) {
 	
 	
 // Tabletop table fix
-//( $("ul li:nth-last-of-type(2)")
+
 	$(".views-field-field-tabletop table.four-col tr:nth-last-child(1) td:nth-last-child(2)").addClass("full-width");
 	$(".views-field-field-tabletop table.four-col tr:gt(3)").addClass("half-width");
 
@@ -536,11 +536,6 @@ function emailCurrentPage(url) {
 
 	$(".page-features-food-beverage-.view-display-id-block_2 table tr td:first-of-type").addClass("route-name");
 
-/* IE Background fix
-
-	$('<div id="bg"><img src="../images/747 HI-res-NEW-Fleet-page-Silo_mg_with_bkg.jpg" alt=""></div>').prependTo('.lt-ie9 #home-wrap');
-
-*/
 
 // end of $ wrapper 
 });
