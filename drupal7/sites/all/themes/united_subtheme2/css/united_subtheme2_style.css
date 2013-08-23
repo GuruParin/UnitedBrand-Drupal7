@@ -263,17 +263,17 @@ border: none;
 	}
 #landing-wrap{
 	background: url("../images/aircraft-landing.jpg") no-repeat left 0px;
--webkit-background-size: cover;
--moz-background-size: cover;
--o-background-size: cover;
-background-size: cover;
-height: 100%;
-top: 0px;
-min-height: 800px;
-margin-top: 0px;
-position: relative;
-z-index: 1;
-width: 100%;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	height: 800px;
+	top: 0px;
+	
+	margin-top: 0px;
+	position: relative;
+	z-index: 1;
+	width: 100%;
 	-ms-behavior: url('http://54.227.239.49/sites/all/themes/united_subtheme2/css/backgroundsize.min.htc');
 }
 .rapper{	
