@@ -276,10 +276,9 @@
  $(function() {
 	 $('.pane-panels-mini').hide();
 	 
-	 // changed to .live because Drupal 7 ships with JQuery 1.4
-	 var showOverlay =     function() {	    
+	 var showOverlay =  function() {	    
 	    	
-	    		    	 $('.pane-panels-mini').hide(400);
+	     $('.pane-panels-mini').hide(400);
 	        var sName = $(this).attr('id');
 	        
 	

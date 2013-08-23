@@ -994,7 +994,8 @@ table.three-col td{
 table.two-col td{
 	background-color: #e8e8e8;
 	border-bottom: solid 1px #fff;
-	padding: 6px 16px;
+	padding: 6px 16px; 	
+	width:25%;
 
 }
 table.one-col td{
@@ -1239,15 +1240,15 @@ td.views-field-field-beverage-menus ul{
 
 }
 .second-col{
-	width: 135px;
+	
 	padding: 15px 0px;
 }
 .third-col{
-	width: 135px;
+	
 	padding: 15px 0px;
 }
 .fourth-col{
-	width: 135px;
+	
 	padding: 15px 0px;
 }
 #aircraft-specs .third-col{
@@ -1513,14 +1514,14 @@ a , li {outline:none;}
 	background-color:#647d8f;
 }
 .config-menu ul li.activeConfig{
-	background: #fff url("../images/arrow-dropdown.gif") no-repeat scroll 84px 6px;
+	background: #fff url("../images/arrow-dropdown.gif") no-repeat scroll 192px 6px;
 	display: block;
 	border: 1px solid #62a9e3;
 	color: #002244;
 }
 .config-menu ul{
 	width: 100px;
-	margin: 0 0 0 632px !important;
+	margin: 0 0 0 528px !important;
 	position: absolute;
 	top: 82px;
 }
@@ -1528,7 +1529,7 @@ a , li {outline:none;}
 	background: #fff;
 	padding-right: 20px;
 	border: 1px solid #62a9e3;
-	width: 108px;
+	width: 216px;
 	padding: 0;
 	display: none;
 	z-index: 123;
@@ -1544,8 +1545,8 @@ a , li {outline:none;}
 	color: #002244;
 	text-decoration: none;
 	line-height: 18px;
-	padding: 3px 12px;
-	width: 84px;
+	padding: 3px 5px;
+	width: 184px;
 }
 a{
 	display: block;
@@ -1695,6 +1696,24 @@ a{
 	background-repeat: no-repeat; 	
 }
 /* Search CSS */
+.page-search h1{
+color: #002244;
+font-size: 32px;
+margin: 0 0 8px 0px;
+width: 698px;
+font-family: 'Conv_ClanOT-Book';
+}
+
+.page-search h2{
+font-size: 18px;
+font-family: 'Conv_ClanOT-Medium';
+border-bottom: solid 1px;
+margin: 11px 0 22px;	
+}
+.page-search h3{
+margin: 30px 0 12px !important;	
+}
+
 .page-search #content{
 	margin:88px 0 92px 178px;	
 }
@@ -1773,7 +1792,7 @@ position: absolute;
 
 #site-name { /* Wrapper for website name */
   	float: right;
-	margin: 50px -194px;
+	margin: 50px -180px;
 	right: 44px;
 	font-size: 22px;
 	font-weight: 300;
@@ -1863,7 +1882,7 @@ dt{
 width: 1080px;
 }
 .breadcrumb{ 	
-	margin: 0px 0px 0 100px;
+	margin: 35px 0px 0 100px;
 z-index: 3;
 color: #75b3e6;
 font-size: 12px;
@@ -2184,22 +2203,22 @@ font-size: 11px;
 
 
 .grayback .first-col {
-	width: 127px;
-	padding: 8px 20px 10px 20px;
+	width: 25%;
+padding: 8px 12px 10px 20px;
 }
 
 .grayback .second-col {
-width: 250px;
-padding: 8px 0px 10px;
+
+padding: 10px 20px 12px 5px;
 }
 
 .grayback .third-col {
-width: 135px;
+
 padding: 8px 0px 10px;
 }
 
 .grayback .fourth-col {
-width: 135px;
+
 padding: 8px 0px 10px;
 }
 
@@ -2227,12 +2246,12 @@ line-height: 1.5em;
 
 .lt-ie9 #block-menu-menu-left-margin-menu ul.menu{
 	top:0px !important;
-	height:100%;
+	height:101%;
 }
 
 .lt-ie9 #block-menu-menu-left-margin-menu ul.menu #planes ul.menu{
 	top:0px !important;
-	height:100%;
+	height:101%;
 }
 
 .lt-ie9 .config-menu{
@@ -2267,4 +2286,7 @@ line-height: 1.5em;
 }
 .lt-ie9 #landing-wrap img{
 	top:-255px !important;
+}
+.lt-ie9 #fleet_total_top{
+	top:90px;
 }

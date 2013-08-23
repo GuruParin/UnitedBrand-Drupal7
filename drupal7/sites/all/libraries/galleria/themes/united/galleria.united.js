@@ -9,7 +9,7 @@
 
 Galleria.addTheme({
     name: 'United',
-    author: 'Jason Howard',
+    author: 'pergle',
     css: 'galleria.united.css',
     defaults: {
         transition: 'slide',

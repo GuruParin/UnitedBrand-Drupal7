@@ -97,6 +97,7 @@
     <script src="<?php print $base_path . $path_to_zen; ?>/js/html5.js"></script>
     <![endif]-->
   <?php endif; ?>
+  <link rel="stylesheet" href="http://54.227.239.49/sites/all/libraries/galleria/themes/united/galleria.united.css"> 
 </head>
 <body class="<?php print $classes; ?>" <?php print $attributes;?>>
   <?php if ($skip_link_text && $skip_link_anchor): ?>
