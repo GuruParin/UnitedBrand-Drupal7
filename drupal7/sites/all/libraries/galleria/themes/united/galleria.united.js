@@ -20,7 +20,10 @@ Galleria.addTheme({
         _toggleInfo: false,
         
         // prevent images from stretching. set to undefined to allow scaling
-        max_scale_ratio: 1 
+        max_scale_ratio: 1 ,
+        
+        //keep arrows on 
+        idleMode: false
        
     },
            

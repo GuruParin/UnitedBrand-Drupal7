@@ -355,7 +355,7 @@ url = $.url(window.location.pathname);
 	
 // Share/Email this Slider
 
-$( "<ul id='share-slider' class='menu'><li id='fb'>FB</li><li id='tweet'>Tweet</li><li id='email-this'>email</li></ul>" ).appendTo($("#list-sharebutton"));
+/*$( "<ul id='share-slider' class='menu'><li id='fb'>FB</li><li id='tweet'>Tweet</li><li id='email-this'>email</li></ul>" ).appendTo($("#list-sharebutton"));
       
 
 
@@ -371,7 +371,9 @@ function emailCurrentPage(url) {
          
 };
 
-	$('#email-this').click(emailCurrentPage);
+	$('#list-sharebutton').click(emailCurrentPage);
+
+
 
    // get current url dir 
      	urlRegExp = url.attr('directory');
