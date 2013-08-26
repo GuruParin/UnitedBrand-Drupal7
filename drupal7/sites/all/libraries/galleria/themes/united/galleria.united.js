@@ -17,7 +17,10 @@ Galleria.addTheme({
         _my_color: '#eeeee',
 
         // set this to false if you want to show the caption all the time:
-        _toggleInfo: false
+        _toggleInfo: false,
+        
+        // prevent images from stretching. set to undefined to allow scaling
+        max_scale_ratio: 1 
        
     },
            
