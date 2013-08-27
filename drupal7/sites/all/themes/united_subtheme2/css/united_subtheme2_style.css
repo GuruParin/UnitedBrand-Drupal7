@@ -244,7 +244,7 @@ border: none;
 	height: 90px;
 	}
 #home-wrap{
-	background: url('../images/747 HI-res-NEW-Fleet-page-Silo_mg_with_bkg.jpg') no-repeat left -50px;
+	background: url(../images/homepage_image/Fleet%20page%20bkg.jpg) no-repeat left -50px;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -261,8 +261,23 @@ border: none;
     -ms-behavior: url('http://54.227.239.49/sites/all/themes/united_subtheme2/css/backgroundsize.min.htc');
 
 	}
+	
+#flying_plane{
+	background: url(../images/homepage_image/747_silo.png) no-repeat;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+height: 50%;
+top: -38px;
+position: absolute;
+z-index: -1;
+width: 36%;
+-ms-behavior: url('http://54.227.239.49/sites/all/themes/united_subtheme2/css/backgroundsize.min.htc');
+right: 2px;
+}
 #landing-wrap{
-	background: url("../images/aircraft-landing.jpg") no-repeat left 0px;
+	background:url(../images/landing_page_Image/Clouds%20bkg.jpg) no-repeat;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -275,6 +290,21 @@ border: none;
 	z-index: 1;
 	width: 100%;
 	-ms-behavior: url('http://54.227.239.49/sites/all/themes/united_subtheme2/css/backgroundsize.min.htc');
+}
+#landing_plane{
+background: url(../images/landing_page_Image/Aircraft_Silo_Fleet-page.png) no-repeat;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+height: 367px;
+width: 906px;
+bottom: 36px;
+position: absolute;
+z-index: -2;
+-ms-behavior: url('http://54.227.239.49/sites/all/themes/united_subtheme2/css/backgroundsize.min.htc');
+right: 20px;
+margin: 0;
 }
 .rapper{	
 	width: 100%;
@@ -342,7 +372,7 @@ border: none;
 #block-panels-mini-home-blocks, #aircraft_landing_menu{
 	margin:0 0 0 0px;
 	width: 701px;
-	z-index: 2;
+	z-index: 3;
 }
 #block-panels-mini-home-blocks .pane-views, #aircraft_landing_menu li{
 	padding: 10px 0 0;
@@ -355,7 +385,7 @@ border: none;
 }
 
 #block-panels-mini-home-blocks .pane-views.white-text:hover, #aircraft_landing_menu a li:hover{
-background-color: #edb72b;
+	background-color: #edb72b;
 }
 
 #block-panels-mini-home-blocks .white-text .views-field-name span{
@@ -574,6 +604,9 @@ div.view-features-menus2-cabin-class-menu ul{
     margin: 11px;
     padding: 0;
 }
+#mini-panel-home_overlays_assembled h3{
+ color: #002244;
+ }
 #table-wrap td a:hover{
 	text-decoration:none;
 }
@@ -761,14 +794,14 @@ margin: 0px 0 0;
 
 
 #mini-panel-home_overlays_assembled .panel-display{
-	background-color:#edb72b;
+	background-color:#e5e5e5;
 	width:420px;
 	height:280px;
 	 display:block;
 	position: absolute;
-	z-index: 9;
+	z-index: 9432;
 	-ms-behavior: url('http://54.227.239.49/sites/all/themes/united_subtheme2/css/backgroundsize.min.htc');
-	background-size: 255px 222px;
+
 	
 }
 .view-id-home_overlay ul{
@@ -778,7 +811,7 @@ margin: 0px 0 0;
 	padding: 0px;
 }
 .view-id-home_overlay ul li{
-	background: #f7cf50;
+	background: #7c848a;
 	margin: 0px 0 2px;
 	padding: 4px 4px 6px 10px;
 	color: #fff;
@@ -786,7 +819,7 @@ margin: 0px 0 0;
 	width: 165px;
 }
 .view-id-home_overlay ul li:hover{
-	background:#fee4a0;
+	background:#edb72b;
 }
 .view-id-home_overlay ul li a{
 	color: #fff;
@@ -860,7 +893,7 @@ ul#aircraft-class-selection li, div.view-features-menus2-cabin-class-menu li{
 	max-width: 152px;
 	}
 div.view-features-menus2-cabin-class-menu li:hover{
-xL	background-color: #edb72b;
+	background-color: #edb72b;
 }
 ul#aircraft-class-selection li a, div.view-features-menus2-cabin-class-menu li a{
 	text-decoration: none;
@@ -984,6 +1017,13 @@ table.four-col td{
 	padding: 7px 0px;
 	width:145px;	
 }
+.view-id-_features_blocks_tabletop table.four-col td{
+	vertical-align: top;
+	background-color:#e8e8e8;
+	border-bottom: solid 1px #fff;	
+	padding: 7px 0px;
+	width:26%;	
+}
 
 table.three-col td{
 	vertical-align: top;
@@ -1025,6 +1065,10 @@ table.four-col tr.half-width td li{
 table.four-col tr.half-width td.full-width li{
 	width: 323px;
 	float: left;
+}
+table.four-col h5{
+	width:100%;
+	margin: 0 0 0 18px;
 }
 table.three-col td li{
 	width: 210px;
@@ -1137,11 +1181,12 @@ td.views-field-field-beverage-menus ul{
 	padding: 10px 0px;
 }
 .view-id-features_food_bev_food.view-display-id-block_2 table td{
-	font-size:11px;
-	padding: 0px 18px 5px 20px;
-	color:#042343;
-	border-bottom: solid 1px;
-	font-family: 'Conv_ClanOT-Medium';
+	font-size: 11px;
+padding: 22px 18px 5px 20px;
+color: #042343;
+border-bottom: solid 1px;
+font-family: 'Conv_ClanOT-Medium';
+vertical-align: top;
 	
 }
 .view-display-id-block_2 table .views-row-last td{
@@ -1262,96 +1307,96 @@ td.views-field-field-beverage-menus ul{
 	position:absolute;
 }
 #mini-panel-787_home_overlay{
-  	margin: 0 136px;
-	background-image:url(../images/AIRCRAFT/787.png);
-	background-position:172px 15px; 
-	background-repeat:no-repeat;
+  margin: 0 136px;
+	background-image: url(../images/AIRCRAFT/787.png);
+	background-position: 192px 32px;
+	background-repeat: no-repeat;
 	background-size: 220px 160px;
 	margin-top: 207px;
-	margin-left: 140px;	
+	margin-left: 140px;
 
 	}
 	
 #mini-panel-777_home_overlay{
 	background-image: url(../images/AIRCRAFT/777.png);
-	background-position: 172px 15px;
+	background-position: 192px 32px;
 	background-repeat: no-repeat;
-	background-size: 220px;
+	background-size: 220px 160px;
 	margin-top: 207px;
 	margin-left: 140px;
-				}
+					}
 #mini-panel-767_home_overlay{
 	background-image:url(../images/AIRCRAFT/767.png);
-	background-position:172px 15px; 
-	background-repeat:no-repeat;
-	background-size: 220px;
+	background-position: 192px 32px;
+	background-repeat: no-repeat;
+	background-size: 220px 160px;
 	margin-top: 207px;
 	margin-left: 280px;
-				}
+					}
 #mini-panel-747_home_overlay{
 	background-image:url(../images/AIRCRAFT/747.png);
-	background-position:172px 15px; 
-	background-repeat:no-repeat;
-	background-size: 220px;
+	background-position: 192px 32px;
+	background-repeat: no-repeat;
+	background-size: 220px 160px;
 	margin-top: 207px;
 	margin-left: 280px;
 				}
 #mini-panel-a319_home_overlay, #mini-panel-a320_home_overlay{
 	background-image:url(../images/AIRCRAFT/A319_A320.png);
-	background-position:172px 15px; 
-	background-repeat:no-repeat;
-	background-size: 220px;
+	background-position: 192px 32px;
+	background-repeat: no-repeat;
+	background-size: 220px 160px;
 	margin-top: 207px;
-	margin-left: 140px;
+	margin-left: 140px;;
 				}
 #mini-panel-737_home_overlay{
 	background-image:url(../images/AIRCRAFT/737.png);
-	background-position:172px 15px; 
-	background-repeat:no-repeat;
-	background-size: 220px;
+	background-position: 192px 32px;
+	background-repeat: no-repeat;
+	background-size: 220px 160px;
 	margin-top: 207px;
 	margin-left: 280px;
 				}
 #mini-panel-757_home_overlay{
 	background-image:url(../images/AIRCRAFT/757.png);
-	background-position:172px 15px; 
-	background-repeat:no-repeat;
-	background-size: 220px;
+	background-position: 192px 32px;
+	background-repeat: no-repeat;
+	background-size: 220px 160px;
 	margin-top: 207px;
 	margin-left: 280px;
 				}				
 #mini-panel-e_jets_home_overlay{
 	background-image:url(../images/AIRCRAFT/E70.png);
-	background-position:172px 15px; 
-	background-repeat:no-repeat;
-	background-size: 220px;
+	background-position: 192px 32px;
+	background-repeat: no-repeat;
+	background-size: 220px 160px;
 	margin-top: 347px;
 	margin-left: 140px;								
 }
 #mini-panel-crjs_home_overlay{
 	background-image:url(../images/AIRCRAFT/CRJ200_700.png);
-	background-position:172px 15px; 
-	background-repeat:no-repeat;
-	background-size: 220px;
+	background-position: 192px 32px;
+	background-repeat: no-repeat;
+	background-size: 220px 160px;
 	margin-top: 347px;
-	margin-left: 140px;							
+	margin-left: 140px;					
 }
 
 #mini-panel-erj_home_overlay{
 	background-image:url(../images/AIRCRAFT/E145_E135.png);
-	background-position:172px 15px; 
-	background-repeat:no-repeat;
-	background-size: 220px;
+	background-position: 192px 32px;
+	background-repeat: no-repeat;
+	background-size: 220px 160px;
 	margin-top: 347px;
-	margin-left: 280px;								
+	margin-left: 280px;							
 }
 #mini-panel-prop_home_overlay{
 	background-image:url(../images/AIRCRAFT/PROP-Q200.png);
-	background-position:172px 15px; 
-	background-repeat:no-repeat;
-	background-size: 220px;
+	background-position: 192px 32px;
+	background-repeat: no-repeat;
+	background-size: 220px 160px;
 	margin-top: 347px;
-	margin-left: 280px;	
+	margin-left: 280px;
 }
 #features_menu{
 	color: #62A9E3;
@@ -1429,6 +1474,10 @@ text-indent: -9999px;
 	text-indent: -9999px;
 	border-top: solid 1px #fff;
 	cursor: pointer;
+}
+#block-menu-menu-left-margin-menu ul li:hover{
+	background-color: ; /* we need to get icons as pngs */
+
 }
 #list-email{ /* Main Nav list items */	
 	border-bottom: solid 1px #fff;
@@ -1581,7 +1630,7 @@ a{
 
 /*  Define the triggers of left Nav  */
 #block-menu-menu-left-margin-menu ul.menu li.expanded ul.menu{
-        display: none;
+        display: block;
     }
 
  #block-menu-menu-left-margin-menu ul.menu li.show_children ul.menu{
@@ -1592,7 +1641,7 @@ a{
     }
     
 #block-menu-menu-left-margin-menu ul.menu li.show_children ul.menu li.expanded  ul.drop_down{
-        display: none !important;
+        display: block !important;
     }
 
 #block-menu-menu-left-margin-menu ul.menu li.show_children ul.menu li.expanded.show_children ul.drop_down{
@@ -1608,7 +1657,7 @@ a{
 	margin: -2px -2px;
 	height: 100%;
 	list-style-type: none;
-	z-index: 12;
+	
 }
 #block-menu-menu-left-margin-menu ul.menu ul.menu.drop_down{
 	background-color: #647d8f;
@@ -1645,16 +1694,15 @@ a{
 	width: 39px;
 	background-repeat: no-repeat; 	
 }
-#block-printfriendly-printfriendly{
+#list-print01{
 	background-image:url("../images/print.gif");
 		background-position:5px 18px;
 		height: 60px;
 	width: 39px; 
 	background-repeat: no-repeat;
-	position: absolute;	
-	top:22px;
+
 	left:44px;
-	display:none;
+	
 }
 #list-sharebutton{
 	background-image:url("../images/email.gif");	
@@ -1697,26 +1745,53 @@ a{
 	background-repeat: no-repeat; 	
 }
 /* Search CSS */
-.page-search h1{
-color: #002244;
-font-size: 32px;
-margin: 0 0 8px 0px;
-width: 698px;
-font-family: 'Conv_ClanOT-Book';
+#edit-keys{
+	width:496px;
 }
+.page-search h1{
+color: #fff;
+font-size: 31px;
+font-weight: 300;
+margin: 78px 0 18px 0px;
+width: 698px;
+line-height: 27px;
 
+font-family: 'Conv_ClanOT-Book';
+
+}
+/* font-family: 'Conv_ClanOT-Medium';  bold */
 .page-search h2{
-font-size: 18px;
+font-size: 14px;
 font-family: 'Conv_ClanOT-Medium';
-border-bottom: solid 1px;
-margin: 11px 0 22px;	
+margin: 12px 0 22px;
+background-color: #c1daf0;
+opacity: 0.75;	
+padding:10px;
 }
 .page-search h3{
-margin: 30px 0 12px !important;	
+margin: 30px 0 12px !important;
+font-family: 'Conv_ClanOT-Medium';
+
+
 }
 
+.page-search h3 a{
+	text-decoration: none;	
+	color:#002244;
+}
+.pager a{
+	color:#002244;
+}
+.search-results .search-snippet-info {
+	padding:0px;
+	}
 .page-search #content{
-	margin:88px 0 92px 178px;	
+	margin:0px auto;
+	float:none;	
+	width: 600px !important;
+}
+.page-search .breadcrumb{
+	display:none;
 }
 
 /* admin styles */
@@ -1780,12 +1855,17 @@ body {
 }
 
 #logo { /* Wrapping link for logo */
-  margin: 30px 38px 0;
+  margin: 0px 38px 0;
 padding: 0;
+background: url('../images/united_logo_reverse.png') no-repeat;
+/*
 background: url("../images/logo-large.gif") no-repeat left top;
+
+*/
 width: 321px;
 height: 43px;
 position: absolute;
+top:0px;
 }
 #logo img {
   vertical-align: bottom;
@@ -1793,11 +1873,10 @@ position: absolute;
 
 #site-name { /* Wrapper for website name */
   	float: right;
-	margin: 50px -180px;
-	right: 44px;
-	font-size: 22px;
-	font-weight: 300;
-	text-align: right;
+margin: 50px -195px;
+font-size: 22px;
+font-weight: 300;
+text-align: right;
 	}
 
 #link-to-branding { /* link to branding	 website */
@@ -1853,6 +1932,7 @@ position: absolute;
 	margin: 0 auto;
 	width: 700px;
 	float: none;
+	z-index: 321;
 }
 #landing-wrap #content.column {
 	margin: 0 auto;
@@ -1883,7 +1963,7 @@ dt{
 width: 1080px;
 }
 .breadcrumb{ 	
-	margin: 35px 0px 0 100px;
+	margin: 10px 0px 0 100px;
 z-index: 3;
 color: #75b3e6;
 font-size: 12px;
@@ -1930,6 +2010,7 @@ span.field-label { /* The inline field label used by the Fences module */
 }
 .item-list .pager li { /* Each page number in the pager list */
   padding: 0 0.5em;
+  float:left;
 }
 
 .feed-icon { /* The link to the RSS or Atom feed for the current list of content */
@@ -2169,7 +2250,7 @@ background-color:none !important;
 #logo {
 	margin: 30px 0px 0;
 	padding: 0;
-	background: none;
+	
 	width: 321px;
 }
 
@@ -2240,6 +2321,28 @@ line-height: 1.5em;
 #galleria-1{
 	height:350px;
 	width:600px;
+}
+.page-search-node #main{
+	background: url(../images/search-clouds.png) no-repeat;
+	-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+height: 100%;
+top: 0px;
+padding: 0 0 45px;
+position: relative;
+z-index: 1;
+width: 100%;
+-ms-behavior: url('http://54.227.239.49/sites/all/themes/united_subtheme2/css/backgroundsize.min.htc');
+
+}
+
+.form-type-textfield label{
+	display:none;
+}
+.view-features-food-bev-food ul {
+ 	margin-top:0px !important;
 }
 
 

@@ -9,21 +9,24 @@
 
 Galleria.addTheme({
     name: 'United',
-    author: 'pergle',
+    author: 'pergle and jason',
     css: 'galleria.united.css',
     defaults: {
         transition: 'slide',
-        thumbCrop:  'height',
+        //thumbCrop:  'width',
         _my_color: '#eeeee',
 
         // set this to false if you want to show the caption all the time:
         _toggleInfo: false,
         
         // prevent images from stretching. set to undefined to allow scaling
-        max_scale_ratio: 1 ,
+       // max_scale_ratio: 1 ,
         
         //keep arrows on 
-        idleMode: false
+        //idleMode: false,
+        
+        //
+       
        
     },
            

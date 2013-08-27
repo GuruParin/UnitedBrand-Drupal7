@@ -7,15 +7,38 @@
 
 @media print {
 
+
+
   a:link,
   a:visited { /* underline all links */
-    text-decoration: underline !important;
+    text-decoration: underline ;
   }
 
   #site-name a:link,
   #site-name a:visited { /* Don't underline header */
     text-decoration: none !important;
   }
+  
+  #features_menu a {
+color: #000;
+text-decoration: none !important;
+}
+
+.section-features .section {
+margin: 0 0 0 0px;
+}
+
+#header {
+  background: #fff !important;
+;
+  }
+#logo {
+	background: url('../images/united_logo_reverse.png') no-repeat !important;
+	width: 245px;
+	height: 45px;
+	 }
+#logo a img {
+	display: none; }
 
    /*
   #content a[href]:after { Add visible URL after links.
@@ -41,7 +64,7 @@
     padding: 0 !important;
   }
 
-  body,
+  html,body,
   #page,
   #main,
   #content { /* Turn off any background colors or images */
