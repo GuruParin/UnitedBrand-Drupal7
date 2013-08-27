@@ -1,4 +1,3 @@
-
 /*
  * Purl (A JavaScript URL parser) v2.3.1
  * Developed and maintanined by Mark Perkins, mark@allmarkedup.com
@@ -272,24 +271,20 @@
 
   jQuery(document).ready(function($) {
     // Code that uses jQuery's $ can follow here.
-    
  $(function() {
 	 $('.pane-panels-mini').hide();
-	 
-	 var showOverlay =  function() {	    
-	    	
-	     $('.pane-panels-mini').hide(400);
+
+	 // changed to .live because Drupal 7 ships with JQuery 1.4
+	    $('.white-text').live('click', function() {	    
+
+	    		    	 $('.pane-panels-mini').hide(400);
 	        var sName = $(this).attr('id');
-	        
-	
+
+
 			 $('.'+sName+'-home-overlay').toggle(400);
-		
-	    };
-	    
-	    $('.white-text').click(showOverlay);
-	    
-	
-	
+
+	    });
+
 		$('.close').live('click', function() {
 	        //$(this).parent('div').toggle(400);
 	         $('.pane-panels-mini').hide(400);			
@@ -302,28 +297,22 @@
 		$( "#table-wrap #tabs" ).removeClass(".ui-widget-content");
 		});
 
-		
-		
+
+
 		// side toolbar
 	  $(function() {
 
-	    
+
 		// right-menu features menu
-		
+
 //$( "#features_menu" ).menu();
 
-		
+
 		// fix lame nodes of drupal menus Left Nav Icons
 		$('#block-menu-menu-left-margin-menu ul li').each(function() {
    var player = $(this).children().attr("id");
    $(this).attr('id', 'list-'+player);
 });
-
-
-
-
-
-
 
 // Make your own menu
 
@@ -336,100 +325,37 @@
 
 	 $(".accordion").next().addClass("drop_down");   
 	               		// tab navs
-		
+
 		// $( "#seating-menu , #galleys-menu" ).tabs();					
-	
+
 	$("span").removeClass("ui-icon-carat-1-e");
-	
 	$('#fleet-inner-menu .ui-icon').remove();
-	
-//	$("a").attr('hidefocus' , 'hidefocus');
-	
 
-	
+	$("a").attr('hidefocus' , 'hidefocus');
+
+
+
 	});
-	
-	function rawurlencode (str) {
-  // http://kevin.vanzonneveld.net
-  // +   original by: Brett Zamir (http://brett-zamir.me)
-  // +      input by: travc
-  // +      input by: Brett Zamir (http://brett-zamir.me)
-  // +   bugfixed by: Kevin van Zonneveld (http://kevin.vanzonneveld.net)
-  // +      input by: Michael Grier
-  // +   bugfixed by: Brett Zamir (http://brett-zamir.me)
-  // +      input by: Ratheous
-  // +      reimplemented by: Brett Zamir (http://brett-zamir.me)
-  // +   bugfixed by: Joris
-  // +      reimplemented by: Brett Zamir (http://brett-zamir.me)
-  // %          note 1: This reflects PHP 5.3/6.0+ behavior
-  // %        note 2: Please be aware that this function expects to encode into UTF-8 encoded strings, as found on
-  // %        note 2: pages served as UTF-8
-  // *     example 1: rawurlencode('Kevin van Zonneveld!');
-  // *     returns 1: 'Kevin%20van%20Zonneveld%21'
-  // *     example 2: rawurlencode('http://kevin.vanzonneveld.net/');
-  // *     returns 2: 'http%3A%2F%2Fkevin.vanzonneveld.net%2F'
-  // *     example 3: rawurlencode('http://www.google.nl/search?q=php.js&ie=utf-8&oe=utf-8&aq=t&rls=com.ubuntu:en-US:unofficial&client=firefox-a');
-  // *     returns 3: 'http%3A%2F%2Fwww.google.nl%2Fsearch%3Fq%3Dphp.js%26ie%3Dutf-8%26oe%3Dutf-8%26aq%3Dt%26rls%3Dcom.ubuntu%3Aen-US%3Aunofficial%26client%3Dfirefox-a'
-  str = (str + '').toString();
 
-  // Tilde should be allowed unescaped in future versions of PHP (as reflected below), but if you want to reflect current
-  // PHP behavior, you would need to add ".replace(/~/g, '%7E');" to the following.
-  return encodeURIComponent(str).replace(/!/g, '%21').replace(/'/g, '%27').replace(/\(/g, '%28').
-  replace(/\)/g, '%29').replace(/\*/g, '%2A');
-}
-	
-	
-	function emailCurrentPage() {
-
-  var thispage= rawurlencode(window.location);
-   
-  
- var title = "United Product Guide" 
-  //document.title;
-  
-	  window.location.href = "mailto:?subject="+title+"&body="+ thispage ;
-	  
-	  console.log(thispage);
-         
-};
-
-	$('#list-sharebutton').click(emailCurrentPage);
-	
-	
-	
-	
 	// Get Page URL and set active links
-	
+
      
    	$(function(){	
-	
-var url = $.url(false);
 
 url = $.url(window.location.pathname);
       
         //console.log( "the url is =" + url.attr('directory') );
 
-
-	
-// Share/Email this Slider
-
-/*$( "<ul id='share-slider' class='menu'><li id='fb'>FB</li><li id='tweet'>Tweet</li><li id='email-this'>email</li></ul>" ).appendTo($("#list-sharebutton"));
-      
-
-
-/**/
-
-
    // get current url dir 
-     //	urlRegExp = url.attr('directory');
-     
+     	urlRegExp = url.attr('directory');
+     	    }); 
         // create regexp to match current url pathname and remove trailing slash if present as it could collide with the link in navigation in case trailing slash wasn't present there
         
        
-     // Cabin Class/Section Nav active          
+         // Cabin Class/Section Nav active          
             var cabinClass =  url.segment(5);
             
-      	console.log( "URL cabin class =" + cabinClass );
+      	//console.log( "cabin class or section class =" + cabinClass );
  	
  	        // now grab every link from the navigation
         $('.view-features-menus2-cabin-class-menu ul li div div a').each(function(){
@@ -437,26 +363,13 @@ url = $.url(window.location.pathname);
 
            var getElementUrl = $(this).attr('href').split('/')[5];
                    
-                  console.log( "these links Cabin Class section =" + getElementUrl );
+                  //console.log( "these links section =" + getElementUrl );
                     
                  if(cabinClass == getElementUrl ) {
                 $(this).parent().parent().parent().addClass('active');
-				}
-            	 
-			});
+            }
 
-    // Remove amenity kits from Economy - right menu
-        $('#features_menu a').each(function(){
-        
-         var getElementUrl = $(this).attr('href').split('/')[5];
-
-
-   if(cabinClass == "United Economy Plus" ) {
-                $("#features_menu a").remove(":contains('Amenity')");            }
-            
-            else if(cabinClass == "United Economy" ) {
-                $("#features_menu a").remove(":contains('Amenity')");            }
-        });    
+});
 
 
  // Cabin Class/Section Menu Region active Food & Bev Specific!!!
@@ -484,7 +397,7 @@ url = $.url(window.location.pathname);
  
  var linkLevel =  url.segment(2);
  
- 		//console.log( "url section is " + linkLevel )
+ 		console.log( "url section is " + linkLevel )
  
  	         $('#features_menu a').each(function () {
                  
@@ -497,8 +410,8 @@ url = $.url(window.location.pathname);
                      }  
                  
                   if(linkLevel === "amenity-kits" ) {
-                     $(".view-features-menus2-cabin-class-menu li").remove(":contains('Economy')");
-                    
+                     $(".view-features-menus2-cabin-class-menu li").remove(".views-row-3");
+                     $(".view-features-menus2-cabin-class-menu li").remove(".views-row-4");
                      }
               
              });
@@ -524,7 +437,7 @@ url = $.url(window.location.pathname);
 });
         
  
-   }); 
+ 
 
 /* Gallerias slideshow fixins
 	Galleria.run('#galleria-1', {
@@ -549,35 +462,22 @@ url = $.url(window.location.pathname);
 // Page DOM manip
 
 	$("#header p").remove();
-	
+
+	//$("#home-wrap #first-time").remove();
+
 	$("#features tr").removeClass('odd even');
-	
+
 	$('#list-planes').click(function(){
   window.location = 'http://54.227.239.49/';
 });
 
 	$('.activeConfig').prependTo('.config-menu ul');
-	
+
 	$(".views-row-first td:first-child").addClass("first-cell");
-	
-	$("<div id='flying_plane'></div> ").appendTo("#home-wrap")
-	
-	$("<div id='landing_plane'></div> ").appendTo("#landing-wrap")
-	
-	//$('a#print01').replaceWith('#block-printfriendly-printfriendly a');
 
-function printPage()
-{
-	// remove elements for printing
-   $(".config-menu").remove();
-   
-    window.print();
-    }	
-    
-    $('#list-print01').click( printPage );
-	
+
 // Tabletop table fix
-
+//( $("ul li:nth-last-of-type(2)")
 	$(".views-field-field-tabletop table.four-col tr:nth-last-child(1) td:nth-last-child(2)").addClass("full-width");
 	$(".views-field-field-tabletop table.four-col tr:gt(3)").addClass("half-width");
 
@@ -589,14 +489,14 @@ function printPage()
 // Food and Bev class addition	
 	$(".view-food-bev-blocks").first().addClass("food-bev-overview");
 	$(".view-food-bev-blocks:nth-child(2)").addClass("beverages-list");
-	
+
 	$(".route-nav").parent().parent().addClass("route-nav-wrapper");
 
 	$(".page-features-food-beverage-.view-display-id-block_2 table tr td:first-of-type").addClass("route-name");
 
 
 
+
+
 // end of $ wrapper 
 });
-
-

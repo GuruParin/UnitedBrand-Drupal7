@@ -28,6 +28,15 @@ text-decoration: none !important;
 margin: 0 0 0 0px;
 }
 
+.section-features #content {
+
+width: 100%;
+}
+#features_menu {
+
+margin-left: 282px;
+
+}
 #header {
   background: #fff !important;
 ;
@@ -71,6 +80,7 @@ margin: 0 0 0 0px;
     color: #000;
     background-color: transparent !important;
     background-image: none !important;
+	width:100%;
   }
 
   #skip-link,
