@@ -308,22 +308,24 @@
 //$( "#features_menu" ).menu();
 
 
-		// fix lame nodes of drupal menus Left Nav Icons
+		/* fix lame nodes of drupal menus Left Nav Icons
 		$('#block-menu-menu-left-margin-menu ul li').each(function() {
    var player = $(this).children().attr("id");
    $(this).attr('id', 'list-'+player);
 });
 
+
 // Make your own menu
 
-/*General mouseover drop-down menu for browsers without CSS hover*/  
+/*General mouseover drop-down menu for browsers without CSS hover */
       $("#block-menu-menu-left-margin-menu ul li").hover(function() { 
-              $(this).addClass("show_children");   
-                }, function() {  
-                       $(this).removeClass("show_children");     }); 
+            // $(this).addClass("show_children");   
+           //   }, function() {  
+          //           $(this).removeClass("show_children");  
+                         }); 
 
 
-	 $(".accordion").next().addClass("drop_down");   
+	// $(".accordion").next().addClass("drop_down");     
 	               		// tab navs
 
 		// $( "#seating-menu , #galleys-menu" ).tabs();					

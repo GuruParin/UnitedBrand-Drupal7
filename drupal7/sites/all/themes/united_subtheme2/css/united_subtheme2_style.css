@@ -1474,8 +1474,8 @@ text-indent: -9999px;
 	
 	border-top: solid 1px #fff;
 	cursor: pointer;
-	text-indent: -9999px;
-/**/
+/*	text-indent: -9999px;
+*/
 }
 #block-menu-menu-left-margin-menu ul li:hover{
 	background-color: ; /* we need to get icons as pngs */
@@ -1628,11 +1628,14 @@ a{
 		background-repeat: no-repeat;
 		
 }
+#list-planes{
+
+}
 #planes span{
 		display:none;
 }
 
-/*  Define the triggers of left Nav  */
+/*  Define the triggers of left Nav 
 #block-menu-menu-left-margin-menu ul.menu li.expanded ul.menu{
         display:block;
         z-index:654;
@@ -1653,12 +1656,12 @@ a{
         display: block !important;
     }
     
-       
+        */
 #block-menu-menu-left-margin-menu ul.menu ul.menu{
 	background-color: #647d8f;
 	width: 200px;
 	position: absolute;
-	left: 40px;
+	left: 140px;
 	margin: -2px -2px;
 	height: 90%;
 	list-style-type: none;
@@ -1694,20 +1697,18 @@ a{
 }
 #list-search{
 	background-image:url("../images/search.gif");
-		background-position:3px 18px;
-		height: 60px;
+	background-position:3px 18px;
+	height: 60px;
 	width: 39px;
 	background-repeat: no-repeat; 	
 }
 #list-print01{
 	background-image:url("../images/print.gif");
-		background-position:5px 18px;
-		height: 60px;
+	background-position:5px 18px;
+	height: 60px;
 	width: 39px; 
 	background-repeat: no-repeat;
-
-	left:44px;
-	
+	left:44px;	
 }
 #list-sharebutton{
 	background-image:url("../images/email.gif");	
@@ -1730,8 +1731,8 @@ a{
 	
 #fb{
 	background-image:url('../images/fb.gif');
-		background-position:3px 1px;
-		height: 30px;
+	background-position:3px 1px;
+	height: 30px;
 	width: 39px;
 	background-repeat: no-repeat; 	
 }
