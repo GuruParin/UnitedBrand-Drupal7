@@ -1001,8 +1001,7 @@ table.three-col{
 	margin: 0 0 30px;
 }
 table.three-col ul{
-	padding:0px !important;
-}
+	}
 table.four-col ul{
 	padding: 0px !important;
 	margin: 4px 0px 0 31px !important;
@@ -2430,6 +2429,7 @@ width: 100%;
 	height: 12px;
 	margin:0px;
 	padding:0px;
+	line-height: 12px;
 }
 .lt-ie9 .view-id-features_food_bev_food span{
 	vertical-align: top;

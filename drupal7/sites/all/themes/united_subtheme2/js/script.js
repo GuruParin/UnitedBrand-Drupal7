@@ -426,7 +426,7 @@ url = $.url(window.location.pathname);
          var getElementUrl = $(this).attr('href').split('/')[5];
 
 
-   if(cabinClass == "United EconomyPlus" ) {
+   if(cabinClass == "United Economy Plus" ) {
                 $("#features_menu a").remove(":contains('Amenity')");            }
             
             else if(cabinClass == "United Economy" ) {
