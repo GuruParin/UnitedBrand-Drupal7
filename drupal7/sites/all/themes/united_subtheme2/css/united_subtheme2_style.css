@@ -263,18 +263,19 @@ border: none;
 	}
 	
 #flying_plane{
-	background: url(../images/homepage_image/747-silo.png) no-repeat;
+background: url(../images/homepage_image/747-silo.png) no-repeat;
 -webkit-background-size: cover;
 -moz-background-size: cover;
 -o-background-size: cover;
 background-size: cover;
-height: 50%;
-top: -38px;
+height: 23%;
+top: 68px;
 position: absolute;
 z-index: -1;
-width: 36%;
+width: 22%;
 -ms-behavior: url('http://54.227.239.49/sites/all/themes/united_subtheme2/css/backgroundsize.min.htc');
-right: 2px;
+right: 17px;
+
 }
 #landing-wrap{
 	background:url(../images/landing_page_Image/Clouds%20bkg.jpg) no-repeat;
@@ -301,7 +302,7 @@ height: 367px;
 width: 906px;
 bottom: 36px;
 position: absolute;
-z-index: 1;
+z-index:-1;
 -ms-behavior: url('http://54.227.239.49/sites/all/themes/united_subtheme2/css/backgroundsize.min.htc');
 right: 20px;
 margin: 0;
