@@ -301,7 +301,7 @@ height: 367px;
 width: 906px;
 bottom: 36px;
 position: absolute;
-z-index: -2;
+z-index: 1;
 -ms-behavior: url('http://54.227.239.49/sites/all/themes/united_subtheme2/css/backgroundsize.min.htc');
 right: 20px;
 margin: 0;
@@ -515,7 +515,7 @@ margin: 0;
 	padding-bottom: 30px;
 }
 .section-features .section{
-	margin: 0 0 0 90px;
+	margin: 0 0 0 0px;
 }
 
 div.view-features-menus2-cabin-class-menu{
@@ -1562,13 +1562,16 @@ a , li {outline:none;}
 .toolpiece:hover;{
 	background-color:#647d8f;
 }
+div.config-menu {
+	height:32px;
+}
 .config-menu ul li.activeConfig{
 	background: #fff url("../images/arrow-dropdown.gif") no-repeat scroll 192px 6px;
 	display: block;
 	border: 1px solid #62a9e3;
 	color: #002244;
 }
-.config-menu ul{
+div.config-menu ul{
 	width: 100px;
 	margin: 0 0 0 528px !important;
 	position: absolute;
@@ -1597,6 +1600,7 @@ a , li {outline:none;}
 	padding: 3px 5px;
 	width: 184px;
 }
+
 a{
 	display: block;
 }
@@ -1627,11 +1631,14 @@ a{
 }
 
 #planes span{
-		display:none;
+	display:none;
 }
 
 /*  Define the triggers of left Nav   */
-
+#block-menu-menu-clone-left-margin-menu{
+	left: 0px;
+	
+}
 .show_children ul.firstLevel{
         display: block !important;
     }
@@ -1641,15 +1648,15 @@ a{
       
 #block-menu-menu-clone-left-margin-menu ul.menu ul.firstLevel{
 	background-color: #647d8f;
-width: 200px;
-position: absolute;
-left: 39px;
-margin: 2px 2px 0px;
-height: 94%;
-list-style-type: none;
-z-index: 0;
-top: -1px;
-display: none;	
+	width: 200px;
+	position: absolute;
+	left: 39px;
+	margin: 2px 2px 0px;
+	height: 94%;
+	list-style-type: none;
+	z-index: 654;
+	top: -1px;
+	display: none;	
 }
 #block-menu-menu-left-margin-menu ul.menu ul.menu.drop_down{
 	background-color: #647d8f;
@@ -1785,9 +1792,10 @@ font-family: 'Conv_ClanOT-Medium';
 	padding:0px;
 	}
 .page-search #content{
-	margin:0px auto;
+	/*margin:0px auto;
 	float:none;	
 	width: 600px !important;
+*/
 }
 .page-search .breadcrumb{
 	display:none;
@@ -2393,10 +2401,17 @@ width: 100%;
 }
 
 .lt-ie9 #mini-panel-home_overlays_assembled .panel-display img{
-	margin:0 0 0 185px;
+	margin:0 0 0 5px;
 }
 .lt-ie9 #landing-wrap img{
 	top:-255px !important;
+}
+.lt-ie9 #landing_plane div{
+	z-index: 123;
+	overflow: visible !important;
+}
+.lt-ie9 #landing_plane div img{
+	top:44px !important;
 }
 .lt-ie9 #fleet_total_top{
 	top:90px;

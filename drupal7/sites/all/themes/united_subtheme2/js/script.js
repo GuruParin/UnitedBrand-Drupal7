@@ -395,33 +395,67 @@ url = $.url(window.location.pathname);
       
         //console.log( "the url is =" + url.attr('directory') );
 
-   // get current url dir 
+    // get current url dir 
      	urlRegExp = url.attr('directory');
+     	    }); 
         // create regexp to match current url pathname and remove trailing slash if present as it could collide with the link in navigation in case trailing slash wasn't present there
         
-        // now grab every link from the navigation
-        
-        // Cabin Class/Section Nav active
+       
+     // Cabin Class/Section Nav active          
+            var cabinClass =  url.segment(5);
+            
+      	console.log( "URL cabin class =" + cabinClass );
+ 	
+ 	        // now grab every link from the navigation
         $('.view-features-menus2-cabin-class-menu ul li div div a').each(function(){
         
-    	urlRegExp = url.attr('directory');
-            var getElementUrl = $(this).attr('href');
-            
-            console.log( "the cabin sections are =" + getElementUrl );
-            
-              console.log( "the url section is =" + urlRegExp );
-            
-           // Put the active class on the top Seating, Galley, Toilet section Nav 
-            if(urlRegExp === getElementUrl ) {
+
+           var getElementUrl = $(this).attr('href').split('/')[5];
+                   
+                  console.log( "these links Cabin Class section =" + getElementUrl );
+                    
+                 if(cabinClass == getElementUrl ) {
                 $(this).parent().parent().parent().addClass('active');
-            }
-		  });
-       });  
+				}
+            	 
+			});
+
+    // Remove amenity kits from Economy - right menu
+        $('#features_menu a').each(function(){
         
+         var getElementUrl = $(this).attr('href').split('/')[5];
+
+
+   if(cabinClass == "United EconomyPlus" ) {
+                $("#features_menu a").remove(":contains('Amenity')");            }
+            
+            else if(cabinClass == "United Economy" ) {
+                $("#features_menu a").remove(":contains('Amenity')");            }
+        });    
+
+
+ // Cabin Class/Section Menu Region active Food & Bev Specific!!!
+         
+            var foodBevMenuRoute =  url.segment(6);
+        	//console.log( "aircraft URL" + aircraftType );
+ 	
+ 	        // now grab every link from the navigation
+        $('#features div.route-nav ul li div div a').each(function(){
+        
+
+           var getElementUrl = $(this).attr('href').split('/')[6];
+                   
+                  // console.log( "the type links = " + getElementUrl ).each();
+                    
+                 if(foodBevMenuRoute == getElementUrl ) {
+                $(this).parent().parent().parent().addClass('activeRoute');
+            }
+
+});
   
      /// Right menu active link          
  
- var linkLevel =  url.segment(2);
+var linkLevel =  url.segment(2);
  
  		//console.log( "url section is " + linkLevel )
  
@@ -433,8 +467,15 @@ url = $.url(window.location.pathname);
                     
                  if(linkLevel == getElementUrl ) {
                      $(this).children().addClass('active');
-                 }
+                     }  
+                 
+                  if(linkLevel === "amenity-kits" ) {
+                     $(".view-features-menus2-cabin-class-menu li").remove(":contains('Economy')");
+                    
+                     }
+              
              });
+      
       
 
   var aircraftType =  url.segment(4);
@@ -442,12 +483,12 @@ url = $.url(window.location.pathname);
  	//console.log( "aircraft URL" + aircraftType );
  	
  	        // now grab every link from the navigation
-        $('#features div.view-display-id-block_2 ul li div div a').each(function(){
+        $('div.config-menu ul li div div a').each(function(){
         
 
            var getElementUrl = $(this).attr('href').split('/')[4];
                    
-                  // console.log( "the type links = " + getElementUrl ).each();
+                  // console.log( "the type links = " + getElementUrl )
                     
                  if(aircraftType == getElementUrl ) {
                 $(this).parent().parent().parent().addClass('activeConfig');
@@ -467,7 +508,9 @@ url = $.url(window.location.pathname);
 
 /// aircraft type/configuration dropdown
 
-    $('.view-display-id-block_2 ul li.active').prepend($(this).parent());
+    $('#features .config-menu ul').prepend($('#features li.activeConfig'))
+    
+    //.prependTo($(this).parent());
 
 
 	  $(".config-menu ul").hover(function () {

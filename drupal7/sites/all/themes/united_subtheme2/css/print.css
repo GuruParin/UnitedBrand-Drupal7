@@ -107,6 +107,8 @@ margin-left: 282px;
 #features_menu li a{ display:none !important; }
 
 li.active a{display:block !important;}
+
+#sidebar-first { display:none;}
 /* --end of custom css for print --*/
 } 
 /* End @media print */
