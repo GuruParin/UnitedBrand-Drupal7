@@ -256,8 +256,7 @@ border: none;
 	z-index: 1;
 	width:100%;
     /* The url is relative to the document, not to the css file! */
-    /* Prefer absolute urls to avoid confusion. */
-   
+    /* Prefer absolute urls to avoid confusion. */   
     -ms-behavior: url('http://54.227.239.49/sites/all/themes/united_subtheme2/css/backgroundsize.min.htc');
 
 	}
@@ -268,14 +267,13 @@ background: url(../images/homepage_image/747-silo.png) no-repeat;
 -moz-background-size: cover;
 -o-background-size: cover;
 background-size: cover;
-height: 23%;
+height: 40%;
 top: 68px;
 position: absolute;
 z-index: -1;
-width: 22%;
+width: 30%;
 -ms-behavior: url('http://54.227.239.49/sites/all/themes/united_subtheme2/css/backgroundsize.min.htc');
-right: 17px;
-
+right: 3px;
 }
 #landing-wrap{
 	background:url(../images/landing_page_Image/Clouds%20bkg.jpg) no-repeat;
@@ -384,11 +382,9 @@ margin: 0;
 	height: 130px;
 	background-repeat: no-repeat;
 }
-
 #block-panels-mini-home-blocks .pane-views.white-text:hover, #aircraft_landing_menu a li:hover{
 	background-color: #edb72b;
 }
-
 #block-panels-mini-home-blocks .white-text .views-field-name span{
 	margin: 10px 12px;
 	font-weight: 300;
@@ -397,8 +393,10 @@ margin: 0;
 }
 #block-panels-mini-home-blocks .dark-text .views-field-name span{ /* Body type headers */
 	font-weight: 500;
-	font-size: 22px;
-	text-align: left;}
+	font-size: 18px;
+	text-align: left;
+	line-height: 20px;
+	}
 
 #block-panels-mini-home-blocks .dark-text .views-field-field-fleet-count div {
 	margin-top: 0px;
@@ -406,7 +404,9 @@ margin: 0;
 	vertical-align: top;
 	position: relative;
 	top: -13px;
-	font-size: 15px;
+	font-size: 12px;
+line-height: 17px;
+
 }
 #block-panels-mini-home-blocks span.views-field-name{ /* table grid cells header titles*/
 	text-align: left;
@@ -2423,5 +2423,21 @@ width: 100%;
 	top:44px !important;
 }
 .lt-ie9 #fleet_total_top{
-	top:90px;
+	top:109px;
+}
+.lt-ie9 .view-id-features_food_bev_food table li{
+	vertical-align: top;
+	height: 12px;
+	margin:0px;
+	padding:0px;
+}
+.lt-ie9 .view-id-features_food_bev_food span{
+	vertical-align: top;
+	height: 12px;
+	margin:0px;
+	padding:0px;
+
+}
+.lt-ie9 #home-wrap img{
+	top:0px;
 }
