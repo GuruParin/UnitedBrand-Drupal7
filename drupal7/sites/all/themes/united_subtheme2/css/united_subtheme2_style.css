@@ -263,7 +263,7 @@ border: none;
 	}
 	
 #flying_plane{
-	background: url(../images/homepage_image/747_silo.png) no-repeat;
+	background: url(../images/homepage_image/747-silo.png) no-repeat;
 -webkit-background-size: cover;
 -moz-background-size: cover;
 -o-background-size: cover;
@@ -567,7 +567,7 @@ div.view-features-menus2-cabin-class-menu ul{
 	font-weight: 300;
 	padding: 0 7px;
 	position: absolute;
-	top: 93px;
+	top: 112px;
 	margin-left: 198px;
 }
 #first-time{
@@ -1636,8 +1636,11 @@ a{
 
 /*  Define the triggers of left Nav   */
 #block-menu-menu-clone-left-margin-menu{
-	left: 0px;
-	
+	left: 0px;	
+}
+
+#block-menu-menu-clone-left-margin-menu ul li{
+	cursor:pointer;
 }
 .show_children ul.firstLevel{
         display: block !important;
@@ -1650,12 +1653,12 @@ a{
 	background-color: #647d8f;
 	width: 200px;
 	position: absolute;
-	left: 39px;
+	left: 38px;
 	margin: 2px 2px 0px;
 	height: 94%;
 	list-style-type: none;
 	z-index: 654;
-	top: -1px;
+	top: -2px;
 	display: none;	
 }
 #block-menu-menu-left-margin-menu ul.menu ul.menu.drop_down{
@@ -1791,14 +1794,12 @@ font-family: 'Conv_ClanOT-Medium';
 .search-results .search-snippet-info {
 	padding:0px;
 	}
-.page-search #content{
-	/*margin:0px auto;
-	float:none;	
-	width: 600px !important;
-*/
+#search-wrap {
+	height:100% !important;
 }
 .page-search .breadcrumb{
 	display:none;
+	
 }
 
 /* admin styles */
@@ -1808,6 +1809,13 @@ font-family: 'Conv_ClanOT-Medium';
 }
 .sidebar-first #content {
 width: 900px;
+min-height: 400px;
+position: relative;
+margin: 0px auto;
+float: none;
+top: 0px;
+height: 100%;
+padding: 20px 0px 110px;
 }
 
 .block { /* Block wrapper */
