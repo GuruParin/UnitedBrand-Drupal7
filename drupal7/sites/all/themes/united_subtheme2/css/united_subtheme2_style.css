@@ -261,19 +261,26 @@ border: none;
 
 	}
 	
+.flying_plane_wrap{
+	margin: 0 auto;
+	width: 700px;
+	float: none;
+	z-index: 21;
+}
+	
 #flying_plane{
-background: url(../images/homepage_image/747-silo.png) no-repeat;
--webkit-background-size: cover;
--moz-background-size: cover;
--o-background-size: cover;
-background-size: cover;
-height: 40%;
-top: 68px;
-position: absolute;
-z-index: -1;
-width: 30%;
--ms-behavior: url('http://54.227.239.49/sites/all/themes/united_subtheme2/css/backgroundsize.min.htc');
-right: 3px;
+	background: url(../images/homepage_image/747-silo.png) no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	height: 110px;
+	width: 367px;
+	top: 151px;
+	position: absolute;
+	margin:0 0 0 720px;
+	-ms-behavior: url('http://54.227.239.49/sites/all/themes/united_subtheme2/css/backgroundsize.min.htc');
+	
 }
 #landing-wrap{
 	background:url(../images/landing_page_Image/Clouds%20bkg.jpg) no-repeat;
@@ -282,8 +289,7 @@ right: 3px;
 	-o-background-size: cover;
 	background-size: cover;
 	height: 800px;
-	top: 0px;
-	
+	top: 0px;	
 	margin-top: 0px;
 	position: relative;
 	z-index: 1;
@@ -296,9 +302,9 @@ background: url(../images/landing_page_Image/Aircraft_Silo_Fleet-page.png) no-re
 -moz-background-size: cover;
 -o-background-size: cover;
 background-size: cover;
-height: 367px;
-width: 906px;
-bottom: 36px;
+height: 138px;
+width: 500px;
+bottom: 136px;
 position: absolute;
 z-index:-1;
 -ms-behavior: url('http://54.227.239.49/sites/all/themes/united_subtheme2/css/backgroundsize.min.htc');
@@ -319,7 +325,7 @@ margin: 0;
 #navigation{
 	display:none;
 	}
-#overview-wrap{
+#overview-wrap{ 
 	background:none;
 	width: 100%;
 	height: 800px;
@@ -382,6 +388,9 @@ margin: 0;
 	height: 130px;
 	background-repeat: no-repeat;
 }
+ #fleet-updates-wrap img{
+	width:100% !important;
+}
 #block-panels-mini-home-blocks .pane-views.white-text:hover, #aircraft_landing_menu a li:hover{
 	background-color: #edb72b;
 }
@@ -405,9 +414,9 @@ margin: 0;
 	position: relative;
 	top: -13px;
 	font-size: 12px;
-line-height: 17px;
-
+	line-height: 17px;
 }
+
 #block-panels-mini-home-blocks span.views-field-name{ /* table grid cells header titles*/
 	text-align: left;
 }
@@ -422,10 +431,12 @@ line-height: 17px;
 	background: url(../images/global-first-seating.png) no-repeat left top;
 	height:306px;	
 }
+
 #business-first .seating-chart{
 	background: url(../images/business-first.png) no-repeat left top;
 	height:306px;	
 }
+
 #economy-plus .seating-chart{
 	background: url(../images/economy-plus-seating.png) no-repeat left top;
 	height:306px;	
@@ -1261,11 +1272,21 @@ vertical-align: top;
 .view-id-features_food_bev_food.view-display-id-block_2 td.first-cell{
 	width:310px;
 }
-#features table .pdf-icon li{
-	list-style-image: url('../images/pdf_icon.png');
-}
+
 #features table .xls-icon li{
-	list-style-image:url('../images/excel_icon.png');
+	background:url('../images/excel_icon.png')  no-repeat 2px 2px;
+	list-style-type: none;
+	padding: 0px 28px;
+	line-height: 26px;
+}
+#features table .pdf-icon li{
+	background: url('../images/pdf_icon.png') no-repeat 2px 2px;
+	list-style-type: none;
+	padding: 2px 28px 8px;
+	line-height: 21px;
+}
+#features table .xls-icon ul, #features table .pdf-icon ul{
+ 	padding:0px;
 }
 
 /* --- end of Chef Tips ----*/
@@ -1653,8 +1674,52 @@ a{
     }
 #list-planes ul li:hover ul.drop_down{
         display: block !important;
-    }    
-      
+    }  
+    
+    
+#list-search ul li:hover ul.drop_down{
+        display: block !important;
+    } 
+    
+       
+#search-by-page-form--2 #key-inner-wrapper {
+	position: absolute;
+	background: none;
+	border: 0px solid #f00;
+	width: 247px;
+	height: 53px;
+} 
+#block-search-by-page-1 #search-key input{
+	position: absolute;
+	background: #fff;
+	top: 117px;
+	left: 0px;
+	font-family: 'Conv_ClanOT-Book';
+	width: 207px;
+	height: 9px;
+	float: left;
+	padding: 8px;
+} 
+#block-search-by-page-1 #search-submit {
+	position: absolute;
+	top: 167px;
+	left: 155px;
+	font-family: 'Conv_ClanOT-Book';
+	width: 83px;
+	height: 25px;
+	float: left;
+}  
+#block-search-by-page-1 #search-submit p{
+	color: #fff;
+	height: 12px;
+	width: 66px;
+	position: absolute;
+	left: 44px;
+	z-index: 6543;
+}
+#block-search-by-page-1 h2{
+	display: none;
+}  
 #block-menu-menu-clone-left-margin-menu ul.menu ul.firstLevel{
 	background-color: #647d8f;
 	width: 200px;
@@ -1663,7 +1728,7 @@ a{
 	margin: 2px 2px 0px;
 	height: 100%;
 	list-style-type: none;
-	z-index: 654;
+	z-index: 6;
 	top: -2px;
 	display: none;	
 }
@@ -1703,6 +1768,16 @@ a{
 	background-repeat: no-repeat; 
 	text-indent: -9999px;
 	border-top:solid 1px #fff;	
+}
+#list-search:hover{
+	background-image:url("../images/search-hover.gif");
+	background-position:7px 21px;
+	background-color: #647d8f;
+	height: 60px;
+	width: 40px;
+	padding: 0px;
+	margin-top: 0px;
+	background-repeat: no-repeat;
 }
 #list-print{
 	background-image:url("../images/print.gif");
@@ -1749,14 +1824,19 @@ a{
 	width: 39px;
 	background-repeat: no-repeat; 	
 }
-#tweet{
-	background-image:url('../images/tweet.gif');
-		background-position:3px 1px;
-		height: 30px;
-	width: 39px;
-	background-repeat: no-repeat; 	
-}
+
 /* Search CSS */
+#block-search-by-page-1{
+	background-color: #647d8f;
+	width: 250px;
+	position: absolute;
+	left: -214px;
+	margin: 2px 2px 0px;
+	height: 100%;
+	list-style-type: none;
+	z-index: 6;
+	top: -2px;
+}
 p.search-info{
 	display:none;
 }
@@ -1764,22 +1844,22 @@ p.search-info{
 	width:496px;
 }
 .page-search h1{
-color: #fff;
-font-size: 31px;
-font-weight: 300;
-margin: 78px 0 18px 0px;
-width: 698px;
-line-height: 27px;
-
-font-family: 'Conv_ClanOT-Book';
+	font-size: 31px;
+	font-weight: 300;
+	margin: 78px 0 18px 0px;
+	width: 698px;
+	line-height: 27px;
+	font-family: 'Conv_ClanOT-Book';
 
 }
+
 /* font-family: 'Conv_ClanOT-Medium';  bold */
 .page-search h2{
 font-size: 14px;
 font-family: 'Conv_ClanOT-Medium';
 margin: 12px 0 22px;
-background-color: #c1daf0;
+
+/*background-color: #c1daf0;*/
 opacity: 0.75;	
 padding:10px;
 }
@@ -2219,6 +2299,10 @@ background-color:none !important;
 }
 
 /********  grayback text boxes start  ************/
+.content-block-no-line-bev {
+margin: -10px 0 0px 0 !important;
+}
+
 .clear { clear: both; }
 
 .grayback {
@@ -2413,9 +2497,9 @@ width: 100%;
 .lt-ie9 .select-region{
 	margin-bottom: 10px;
 }
-.lt-ie9 #features table li a {
+/*.lt-ie9 #features table li a {
 	display:inline;
-}
+}*/
 .lt-ie9 #features_menu{
 	top:164px !important;
 }
@@ -2441,13 +2525,21 @@ width: 100%;
 }
 .lt-ie9 .view-id-features_food_bev_food table li{
 	vertical-align: top;
-	height: 12px;
+	height: 30px;
 	margin:0px;
 	padding:0px;
 	line-height: 2px !important;
 }
 .lt-ie9 .view-id-features_food_bev_food .xls-icon li {
 	line-height: 2px !important;
+	padding-top:14px !important;
+	background-position: 1px 1px !important;
+}
+.lt-ie9 .view-id-features_food_bev_food .pdf-icon li {
+	line-height: 2px !important;
+	padding-top:14px !important;
+	background-position: 1px 1px !important;
+	height:14px !important;
 }
 .lt-ie9 .view-id-features_food_bev_food span{
 	vertical-align: top;
@@ -2455,6 +2547,7 @@ width: 100%;
 	margin:0px;
 	padding:0px;
 	line-height: 2px !important;
+	
 
 }
 .lt-ie9 #flying_plane img{

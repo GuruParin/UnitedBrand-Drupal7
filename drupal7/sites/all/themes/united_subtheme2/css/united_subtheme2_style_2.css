@@ -156,7 +156,7 @@ element.style {
 }
 
 .content-block-no-line-bev {
-	margin: -10px 0 80px 0 !important;
+	margin: -10px 0 0px 0 !important;
 }
 
 .content-block-no-line h2 {
@@ -222,7 +222,7 @@ table.four-col td li {
 }
 
 table.three-col {
-	margin: 0;
+	margin: 20px 0px;
 }
 
 table.three-col td li {
@@ -331,11 +331,11 @@ table.three-col td {
 
 
 .page-search #content {
-	min-height: 400px;
+	min-height: 600px;
 	position: relative;
 	margin: 0px auto;
 	float: none;
-	top: 70px;
+	
 }
 
 .page-search .form-item label {
@@ -367,13 +367,12 @@ responsive-sidebars.css:199
 }
 
 .page-search h1 {
-	color: white;
+	color: #024;
 	font-size: 31px;
 	font-weight: 300;
-	margin: 0px 0 18px 0px;
+	margin: 80px 0 18px 0px;
 	width: 698px;
 	line-height: 27px;
-	font-family: 'Conv_ClanOT-Book';
 }
 
 #search-wrap, #fleet-updates-wrap{
@@ -579,6 +578,9 @@ responsive-sidebars.css:199
 
 /***** fleet updates page  ******/
 
+#updateButton:hover {
+	background-color:#edb72b;
+}
 
 .page-fleet-updates #content {
 min-height: 400px;
@@ -600,6 +602,10 @@ float: none;
 	font-family: 'Conv_ClanOT-Medium';
 	font-size: 11px;	
 	padding-left: 10px;
+}
+
+.view--features-blocks-overview-fleet-high .date-display-single {
+	padding-left: 0px;
 }
 
 .page-fleet-updates table.cols-3 td.views-field-field-fleet-type {

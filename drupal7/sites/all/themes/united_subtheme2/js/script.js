@@ -1,3 +1,4 @@
+
 /*
  * Purl (A JavaScript URL parser) v2.3.1
  * Developed and maintanined by Mark Perkins, mark@allmarkedup.com
@@ -537,9 +538,32 @@ var linkLevel =  url.segment(2);
 	
 	$(".accordion").next().addClass("drop_down"); 
 	
-	   $("<div id='flying_plane'></div> ").appendTo("#home-wrap")
+	   $("<div id='flying_plane'></div> ").appendTo("#home-wrap");
+	   
+	   		$('#flying_plane').wrap('<div class="flying_plane_wrap" />');
 
-		$("<div id='landing_plane'></div> ").appendTo("#landing-wrap")
+		$("<div id='landing_plane'></div> ").appendTo("#landing-wrap");
+		
+	//	$('#block-search-by-page-1').appendTo('#list-search');
+		$('#edit-keys--2').attr("value", "Enter search term");
+		
+		$('<p>Search</p>').appendTo('#list-search #search-submit');
+		
+		var defaultValue = "Enter search term";
+		
+		$("#edit-keys--2")
+  .focus(function() {
+        if (this.value == "Enter search term") {
+            this.value = '';
+        }
+  })
+  .blur(function() {
+        if (this.value == '') {
+            this.value = "Enter search term";
+        }
+});
+
+
 	 
 function printPage()
 {
