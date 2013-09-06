@@ -1769,7 +1769,7 @@ a{
 	text-indent: -9999px;
 	border-top:solid 1px #fff;	
 }
-#list-search:hover{
+#list-search:hover , #list-search.hovered{
 	background-image:url("../images/search-hover.gif");
 	background-position:7px 21px;
 	background-color: #647d8f;
@@ -1779,6 +1779,7 @@ a{
 	margin-top: 0px;
 	background-repeat: no-repeat;
 }
+
 #list-print{
 	background-image:url("../images/print.gif");
 	background-position:5px 18px;

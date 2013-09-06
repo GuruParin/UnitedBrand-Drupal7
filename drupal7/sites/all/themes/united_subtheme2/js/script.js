@@ -537,8 +537,13 @@ var linkLevel =  url.segment(2);
 	
 	$('#list-search , #block-search-by-page-1').hover(function(){
 		$('#block-search-by-page-1').toggleClass('show', "hide");
-			});
+		
+				});
 	
+	$('#block-search-by-page-1').hover(function(){
+		$('#list-search').toggleClass('hovered');
+
+	});
 	
 	
 	
