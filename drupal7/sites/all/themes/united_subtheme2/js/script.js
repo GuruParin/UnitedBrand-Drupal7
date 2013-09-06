@@ -544,7 +544,7 @@ var linkLevel =  url.segment(2);
 
 		$("<div id='landing_plane'></div> ").appendTo("#landing-wrap");
 		
-	//	$('#block-search-by-page-1').appendTo('#list-search');
+	$('#block-search-by-page-1').appendTo('#main');
 		$('#edit-keys--2').attr("value", "Enter search term");
 		
 		$('<p>Search</p>').appendTo('#list-search #search-submit');

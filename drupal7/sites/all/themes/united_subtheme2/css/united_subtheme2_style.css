@@ -1830,12 +1830,23 @@ a{
 	background-color: #647d8f;
 	width: 250px;
 	position: absolute;
-	left: -214px;
+	left: 38px;
 	margin: 2px 2px 0px;
 	height: 100%;
 	list-style-type: none;
 	z-index: 6;
 	top: -2px;
+}
+#search-by-page-form--2 #search-submit input {
+	background-image: none;
+	color:#fff;
+	height:25px;
+	width:85px;
+	font-size: .9em;
+	border: none;
+}
+#search-by-page-form--2 #search-submit input:hover {
+	background-color: #edb72b;
 }
 p.search-info{
 	display:none;
