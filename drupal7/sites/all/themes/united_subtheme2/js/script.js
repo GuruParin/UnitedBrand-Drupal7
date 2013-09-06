@@ -534,6 +534,17 @@ var linkLevel =  url.segment(2);
   window.location = '/search';
 });
 
+	
+	$('#list-search , #block-search-by-page-1').hover(function(){
+		$('#block-search-by-page-1').toggleClass('show', "hide");
+			});
+	
+	
+	
+	
+	
+	
+
 	$('#planes').next().addClass("firstLevel");
 	
 	$(".accordion").next().addClass("drop_down"); 

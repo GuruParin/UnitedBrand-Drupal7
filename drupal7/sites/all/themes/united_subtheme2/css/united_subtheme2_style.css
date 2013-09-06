@@ -1677,9 +1677,9 @@ a{
     }  
     
     
-#list-search ul li:hover ul.drop_down{
-        display: block !important;
-    } 
+#list-search a {
+
+}
     
        
 #search-by-page-form--2 #key-inner-wrapper {
@@ -1836,6 +1836,7 @@ a{
 	list-style-type: none;
 	z-index: 6;
 	top: -2px;
+	display:none;
 }
 #search-by-page-form--2 #search-submit input {
 	background-image: none;
